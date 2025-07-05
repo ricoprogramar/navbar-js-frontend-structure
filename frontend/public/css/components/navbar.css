@@ -24,6 +24,7 @@
     margin: 0 auto;
     width: 100%;
     background-color: var(--primary-900);
+    padding: 0;
 }
 
 .navbar__list{
@@ -33,6 +34,7 @@
     gap: 0;
     width: 100%;
     list-style: none;
+    padding: 0;
 }
 
 .navbar__link{
