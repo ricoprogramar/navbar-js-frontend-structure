@@ -1,6 +1,7 @@
 /*Mobile firts*/
 .header{
-    position: fixed;
+    /* position: fixed; */
+    position: static;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -49,6 +50,20 @@
 
 .navbar__link:hover{
     color: var(--secundary-950);
+}
+
+.navbar__link.active {
+  background-color: var(--white);
+  color: var(--primary-950);
+  font-weight: bold;
+  border-radius: 0.6rem;
+
+
+   /* forma de trapecio diagonal */
+   /* https://bennettfeely.com/clippy/ */
+  /* clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); */
+ 
+  
 }
 
 p{

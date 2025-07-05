@@ -1,0 +1,51 @@
+.hero {
+    background-image: url(/frontend/public/assets/hero/imagen-hero-freelancer.jpg);
+    background-position: center;
+    background-size: cover;    
+    height: 45rem;    
+    position: relative;
+    text-align: center;
+    color: var(--white);    
+}
+
+.hero__content {
+    /* Forma antigua de colocar el alfa */
+    /* background-color: rgba(0, 0 , 0, .7); */
+    /* Nueva forma de colocar el alfa */
+    background-color: rgb(0 0 0 / 60%);
+    position: absolute;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    /* inset es el shortcut de top, right, botton, left */
+    inset: 0 0 0 0;
+    /* Otra forma de posicionar el filtro */
+    /* width: 100%;
+    height: 100%; */    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__button {
+    background-color: var(--primary-950);
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;   
+    width: 80%; 
+    margin: 4.0rem;
+}
+
+.hero__button:hover {
+    cursor: pointer;
+}
+
+@media (width > 768px) {
+    .hero__button {
+        width: auto;
+    }
+}
+
